@@ -125,6 +125,8 @@
       align-content: center;
       vertical-align: bottom;
       fill: #757575;
+      width: 14px;
+      height: 14px;
       transition-property: fill, color;
       &:hover {
         fill: var(--main-color);
@@ -198,9 +200,9 @@
       &:not(:last-child) {
         margin-right: 46px;
       }
-      // &:last-child {
-      //   margin-right: auto;
-      // }
+      &:last-child {
+        margin-right: auto;
+      }
     }
 
     &__link {
@@ -236,14 +238,14 @@
   .header {
     &__contact {
       display: flex;
-      // margin-letf: 10px;
-
     }
     &__icon {
       margin-right: 10px;
       align-content: center;
       vertical-align: bottom;
       transition-property: fill;
+      width: 16px;
+      height: 16px;
       &:hover {
         fill: var(--main-color);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
