@@ -1,0 +1,39 @@
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  align-items: center;
+
+    .header &{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0px;
+    }
+
+    .hero & {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 1;
+      padding: 200px 452px;
+    }
+
+    .lorem & {
+      display: flex;
+    }
+
+    .footer &{
+      padding: 60px 0px;
+      display: flex;
+    }
+
+    // .buttons-menu &{
+    //   padding-top: 94px;
+    //   margin-bottom: 50px;
+    // }
+ 
+    .portfolio &{
+      padding-bottom: 94px;
+    }
+}
