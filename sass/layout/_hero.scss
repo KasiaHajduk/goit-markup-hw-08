@@ -1,34 +1,153 @@
-.hero {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #2f303a66;
+.hero .container {
+  padding: 0;
+  margin: 0 auto;
+}
 
-  &__header {
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.363;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    text-align: center;
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 480px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 118px 57px;
+
+    &__header {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.615;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    &__modal-btn {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      background-color: var(--main-color);
+      border-radius: 4px;
+      align-items: center;
+      padding: 10px 42px;
+      border-style: none;
+      margin-top: 30px;
+      margin-left: 83px;
+    }
   }
+}
 
-  &__modal-btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    background-color: var(--main-color);
-    border-radius: 4px;
-    align-items: center;
-    padding: 10px 42px;
-    border-style: none;
-    align-items: center;
-    margin-top: 30px;
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+     url("../images/hero/hero@2x.jpg");
+  }
+}
+
+/////////////////   480
+
+/////////////////   768
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 768px 400px;
+    padding: 100px 200px;
+    // display: flex;
+    // flex-direction: column;
+
+
+    &__header {
+      font-weight: 900;
+      font-size: 6px;
+      line-height: 1.615;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    &__modal-btn {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      background-color: var(--main-color);
+      border-radius: 4px;
+      align-items: center;
+      padding: 10px 42px;
+      border-style: none;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+     url("../images/hero/hero-tablet@2x.png");
+  }
+}
+
+/////////////////   1200
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 1600px 600px;
+
+
+    &__header {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.363;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    &__modal-btn {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      background-color: var(--main-color);
+      border-radius: 4px;
+      align-items: center;
+      padding: 10px 42px;
+      border-style: none;
+      align-items: center;
+      margin-top: 30px;
+    }
   }
 }
