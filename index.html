@@ -65,16 +65,17 @@
     </header>
     <main>
       <!---HERO-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__header">
             EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
           </h1>
-          <button class="hero__modal-btn" type="button" data-modal-open>
+          <!-- <button class="hero__modal-btn" type="button" data-modal-open> -->
+            <button class="hero__modal-btn" type="button" data-modal-menu-open></button>
             Zamów usługę
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!--LOREM-->
       <!-- <section class="lorem section">
@@ -489,12 +490,57 @@
       </div>
     </footer> -->
 
-    <!--przycisk zamknięcia jako button-->
-    <!-- <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
+    <!-- <div class="modal_menu">
+      <div class="modal__close-btn-svg" data-modal-close>
+        <svg class="svg-icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
       </div>
     </div> -->
+
+
+
+
+    <!--przycisk zamknięcia jako button-->
+    <div class="backdrop is-hidden" data-modal-menu>
+      <div class="modal-menu">
+        <div class="modal-menu__close-btn-svg" data-modal-menu-close>
+          <svg class="svg-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </div>
+        <p>dfgdfgdfg</p>
+        <p>fghfghfghfghfgh</p>
+        <nav class="navigation">
+          <a class="navigation__logo link" href="index.html"
+            >Web<span class="navigation__logo--dark">Studio</span></a>
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link link menu_index" href="./index.html"
+                >Agencja8</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="./portfolio.html"
+                >Portfolio8</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="./index.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="header__contact">
+        <a class="header__mail link" href="mailto:info@devstudio.com"
+          ><svg class="header__icon">
+            <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+        <a class="header__tel link" href="tel:+48111111111"
+          ><svg class="header__icon">
+            <use href="./images/icons.svg#icon-telephone"></use></svg>+48 111 111 111</a>
+        </div>
+      </div>
+    </div>
 
     <!--przycisk zamknięcia jako svg-->
     <div class="backdrop is-hidden" data-modal>
@@ -594,5 +640,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
+
   </body>
 </html>
