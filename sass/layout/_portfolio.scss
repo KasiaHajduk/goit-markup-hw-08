@@ -4,6 +4,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
+      margin-bottom: 60px;
     }
   
     .portfolio-card {
@@ -57,7 +58,7 @@
       }
   
       &__image {
-        width: 370px;
+        width: 450px;
         height: 294px;
       }
   
@@ -143,7 +144,7 @@
     }
 
     &__image {
-      width: 370px;
+      width: 354px;
       height: 294px;
     }
 

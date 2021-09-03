@@ -302,6 +302,8 @@
 
     &__center-side {
       display: flex;
+      flex-direction: column;
+      min-width: 206px;
     }
 
     &__title {
@@ -321,6 +323,8 @@
       top: 0px;
       left: 0px;
       margin-left: 70px;
+      display: flex;
+      flex-direction: column;
     }
   }
 

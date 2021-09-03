@@ -739,44 +739,19 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .about {
+    display: flex;
     padding-top: 0;
   }
   .about__list {
     display: flex;
-    justify-content: space-between;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
 
   .about-card {
     position: relative;
   }
   .about-card__description {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    background: #2f303acc;
-  }
-
-  .gallery {
-    padding-top: 0;
-  }
-  .gallery__list {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .gallery-card {
-    position: relative;
-  }
-  .gallery-card__description {
     position: absolute;
     width: 100%;
     bottom: 0px;
@@ -1151,6 +1126,8 @@ img {
   }
   .footer__center-side {
     display: flex;
+    flex-direction: column;
+    min-width: 206px;
   }
   .footer__title {
     font-weight: 700;
@@ -1168,6 +1145,8 @@ img {
     top: 0px;
     left: 0px;
     margin-left: 70px;
+    display: flex;
+    flex-direction: column;
   }
 
   .navigation-footer__logo {
@@ -1750,6 +1729,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 60px;
   }
 
   .portfolio-card__wrapper {
@@ -1794,7 +1774,7 @@ img {
     padding-bottom: 77px;
   }
   .portfolio-card__image {
-    width: 370px;
+    width: 450px;
     height: 294px;
   }
   .portfolio-card__bottom-section {
@@ -1864,7 +1844,7 @@ img {
     padding-bottom: 49px;
   }
   .portfolio-card__image {
-    width: 370px;
+    width: 354px;
     height: 294px;
   }
   .portfolio-card__bottom-section {
@@ -2009,6 +1989,7 @@ img {
     flex-wrap: wrap;
     -moz-column-gap: 30px;
          column-gap: 30px;
+    row-gap: 30px;
   }
 
   .team-card {
