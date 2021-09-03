@@ -6,20 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- <link rel="stylesheet" href="./css/styleskopia.css" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
 
@@ -46,22 +35,31 @@
             </li>
           </ul>
         </nav>
-        <a class="header__mail link" href="mailto:info@devstudio.com"
-          ><svg class="header__icon" width="20" height="16">
-            <use href="./images/icons.svg#icon-envelope"></use></svg
-          >info@devstudio.com</a
-        >
-        <a class="header__tel link" href="tel:+48111111111"
-          ><svg class="header__icon" width="20" height="16">
-            <use href="./images/icons.svg#icon-telephone"></use></svg
-          >+48 111 111 111</a
-        >
+        <ul class="header-contact list">
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="mailto:info@devstudio.com"><svg class="header-contact__icon" width="20" height="16">
+            <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+          </li>
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="tel:+48111111111"><svg class="header-contact__icon" width="20" height="16">
+            <use href="./images/icons.svg#icon-telephone"></use></svg>+48 111 111 111</a>
+          </li>
+        </ul>
+
+        <div class="menu__modal" data-modal-menu-open>
+          <svg class="menu__svg" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </div>
+
+
       </div>
     </header>
 
     <main>
       <!--SECOND-->
-      <div class="buttons-menu container">
+      <div class="buttons-menu">
+        <div class="container">
         <ul class="buttons-menu__list list">
           <li class="buttons-menu__but">
             <button class="buttons-menu__item" type="button">Wszystkie</button>
@@ -79,6 +77,7 @@
             <button class="buttons-menu__item" type="button">Marketing</button>
           </li>
         </ul>
+        </div>
       </div>
       <!-- END SECOND-->
 
@@ -89,11 +88,22 @@
             <li class="portfolio-card">
               <article class="portfolio-card__wrapper">
                 <section class="portfolio-card__top-section">
-                  <img
-                    class="portfolio-card__image"
-                    src="./images/portf-1.jpg"
-                    alt="portf-1"
-                  />
+                  <img class="portfolio-card__image"
+                    alt="portfolio-1"
+                    src="./images/portfolio/portfolio-4-mobile.jpg"
+                    srcset="
+                    ./images/portfolio/portfolio-3-desktop.jpg 1x,
+                    ./images/portfolio/portfolio-3-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"     
+                    srcset="
+                    ./images/portfolio/portfolio-2-tablet.jpg 1x,
+                    ./images/portfolio/portfolio-2-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" 
+                    srcset="
+                    ./images/portfolio/portfolio-1-mobile.jpg 1x,
+                    ./images/portfolio/portfolio-1-mobile@2x.jpg 2x"
+                    media="(min-width: 768px)"              
+                />
                   <div class="portfolio-card__overlay">
                     <p>
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -112,11 +122,14 @@
             <li class="portfolio-card">
               <article class="portfolio-card__wrapper">
                 <section class="portfolio-card__top-section">
-                  <img
-                    class="portfolio-card__image"
-                    src="./images/portf-2.jpg"
-                    alt="portf-2"
-                  />
+                  <img class="portfolio-card__image"
+                    alt="portfolio-2"
+                    src="./images/portfolio/portfolio-2-desktop.jpg"
+                    srcset="
+                    ./images/portfolio/portfolio-2-desktop.jpg 1x,
+                    ./images/portfolio/portfolio-2-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"                
+                  />                  
                   <div class="portfolio-card__overlay">
                     <p>
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -137,10 +150,13 @@
             <li class="portfolio-card">
               <article class="portfolio-card__wrapper">
                 <section class="portfolio-card__top-section">
-                  <img
-                    class="portfolio-card__image"
-                    src="./images/portf-3.jpg"
-                    alt="portf-3"
+                  <img class="portfolio-card__image"
+                    alt="portfolio-3"
+                    src="./images/portfolio/portfolio-3-desktop.jpg"
+                    srcset="
+                    ./images/portfolio/portfolio-3-desktop.jpg 1x,
+                    ./images/portfolio/portfolio-3-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"                
                   />
                   <div class="portfolio-card__overlay">
                     <p>
@@ -160,10 +176,13 @@
             <li class="portfolio-card">
               <article class="portfolio-card__wrapper">
                 <section class="portfolio-card__top-section">
-                  <img
-                    class="portfolio-card__image"
-                    src="./images/portf-4.jpg"
-                    alt="portf-4"
+                  <img class="portfolio-card__image"
+                    alt="portfolio-4"
+                    src="./images/portfolio/portfolio-4-desktop.jpg"
+                    srcset="
+                    ./images/portfolio/portfolio-4-desktop.jpg 1x,
+                    ./images/portfolio/portfolio-4-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"                
                   />
                   <div class="portfolio-card__overlay">
                     <p>
@@ -183,10 +202,13 @@
             <li class="portfolio-card">
               <article class="portfolio-card__wrapper">
                 <section class="portfolio-card__top-section">
-                  <img
-                    class="portfolio-card__image"
-                    src="./images/portf-5.jpg"
-                    alt="portf-5"
+                  <img class="portfolio-card__image"
+                    alt="portfolio-1"
+                    src="./images/portfolio/portfolio-5-desktop.jpg"
+                    srcset="
+                    ./images/portfolio/portfolio-5-desktop.jpg 1x,
+                    ./images/portfolio/portfolio-5-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"                
                   />
                   <div class="portfolio-card__overlay">
                     <p>
@@ -206,10 +228,13 @@
             <li class="portfolio-card">
               <article class="portfolio-card__wrapper">
                 <section class="portfolio-card__top-section">
-                  <img
-                    class="portfolio-card__image"
-                    src="./images/portf-6.jpg"
-                    alt="portf-6"
+                  <img class="portfolio-card__image"
+                    alt="portfolio-6"
+                    src="./images/portfolio/portfolio-6-desktop.jpg"
+                    srcset="
+                    ./images/portfolio/portfolio-6-desktop.jpg 1x,
+                    ./images/portfolio/portfolio-6-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"                
                   />
                   <div class="portfolio-card__overlay">
                     <p>
@@ -231,11 +256,14 @@
             <li class="portfolio-card">
               <article class="portfolio-card__wrapper">
                 <section class="portfolio-card__top-section">
-                  <img
-                    class="portfolio-card__image"
-                    src="./images/portf-7.jpg"
-                    alt="portf-7"
-                  />
+                  <img class="portfolio-card__image"
+                    alt="portfolio-7"
+                    src="./images/portfolio/portfolio-7-desktop.jpg"
+                    srcset="
+                    ./images/portfolio/portfolio-7-desktop.jpg 1x,
+                    ./images/portfolio/portfolio-7-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"                
+                  /> 
                   <div class="portfolio-card__overlay">
                     <p>
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -255,10 +283,14 @@
               <article class="portfolio-card__wrapper">
                 <section class="portfolio-card__top-section">
                   <img
-                    class="portfolio-card__image"
-                    src="./images/portf-8.jpg"
-                    alt="portf-8"
-                  />
+                  <img class="portfolio-card__image"
+                    alt="portfolio-8"
+                    src="./images/portfolio/portfolio-8-desktop.jpg"
+                    srcset="
+                    ./images/portfolio/portfolio-8-desktop.jpg 1x,
+                    ./images/portfolio/portfolio-8-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"                
+                />
                   <div class="portfolio-card__overlay">
                     <p>
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -277,10 +309,13 @@
             <li class="portfolio-card">
               <article class="portfolio-card__wrapper">
                 <section class="portfolio-card__top-section">
-                  <img
-                    class="portfolio-card__image"
-                    src="./images/portf-9.jpg"
-                    alt="portf-9"
+                  <img class="portfolio-card__image"
+                    alt="portfolio-9"
+                    src="./images/portfolio/portfolio-9-desktop.jpg"
+                    srcset="
+                    ./images/portfolio/portfolio-9-desktop.jpg 1x,
+                    ./images/portfolio/portfolio-9-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"                
                   />
                   <div class="portfolio-card__overlay">
                     <p>
@@ -385,5 +420,56 @@
         </div>
       </div>
     </footer>
+
+  <!--menu w oknie modalnym-->
+  <div class="backdrop is-hidden" data-modal-menu>
+    <div class="modal-menu">
+      <div class="modal-menu__close-btn-svg" data-modal-menu-close>
+        <svg class="svg-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </div>
+      <nav class="modal-menu-navigation">
+        <ul class="modal-menu-navigation__list list">
+          <li class="modal-menu-navigation__item">
+            <a class="modal-menu-navigation__link link" href="./index.html"
+              >Agencja</a
+            >
+          </li>
+          <li class="modal-menu-navigation__item">
+            <a class="modal-menu-navigation__link modal-menu__index link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="modal-menu-navigation__item">
+            <a class="modal-menu-navigation__link link" href="./index.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="modal-menu-header__contact">
+      <a class="modal-menu-header__tel link" href="tel:+48111111111">+48 111 111 111</a>
+      <a class="modal-menu-header__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </div>
+
+      <ul class="modal-menu-social-list__list list">
+          <li class="modal-menu-social-list__item">
+            <a class="modal-menu-social-list__link link" href="#">Instagram</a>
+          </li>
+          <li class="modal-menu-social-list__item">
+            <a class="modal-menu-social-list__link link" href="#">Twitter</a>
+          </li>
+          <li class="modal-menu-social-list__item">
+            <a class="modal-menu-social-list__link link" href="#">Facebook</a>
+          </li>
+          <li class="modal-menu-social-list__item">
+            <a class="modal-menu-social-list__link link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+
+    <script src="./js/modal-menu.js"></script>
+
   </body>
 </html>

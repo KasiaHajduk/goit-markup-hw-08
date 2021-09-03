@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <title>WebStudio</title>
   </head>
 
@@ -17,38 +17,42 @@
       <div class="container">
         <nav class="navigation">
           <a class="navigation__logo link" href="index.html"
-            >Web<span class="navigation__logo--dark">Studio</span></a>
+            >Web<span class="navigation__logo--dark">Studio</span></a
+          >
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a class="navigation__link link menu_index" href="./index.html"
+              <a class="navigation__link link menu_index" href="index.html"
                 >Agencja8</a
               >
             </li>
             <li class="navigation__item">
-              <a class="navigation__link link" href="./portfolio.html"
+              <a class="navigation__link link" href="portfolio.html"
                 >Portfolio8</a
               >
             </li>
             <li class="navigation__item">
-              <a class="navigation__link link" href="./index.html">Kontakt</a>
+              <a class="navigation__link link" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
-        
-        <div class="header__contact">
-        <a class="header__mail link" href="mailto:info@devstudio.com"
-          ><svg class="header__icon">
+
+        <ul class="header-contact list">
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="mailto:info@devstudio.com"><svg class="header-contact__icon">
             <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
-        <a class="header__tel link" href="tel:+48111111111"
-          ><svg class="header__icon">
+          </li>
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="tel:+48111111111"><svg class="header-contact__icon">
             <use href="./images/icons.svg#icon-telephone"></use></svg>+48 111 111 111</a>
-        </div>
+          </li>
+        </ul>
 
         <div class="menu__modal" data-modal-menu-open>
           <svg class="menu__svg" width="40" height="40">
             <use href="./images/icons.svg#icon-menu_40px"></use>
           </svg>
         </div>
+
       </div>
     </header>
     <main>
@@ -58,7 +62,7 @@
           <h1 class="hero__header">
             EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
           </h1>
-            <button class="hero__modal-btn" type="button" data-modal-open>
+          <button class="hero__modal-btn" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
@@ -128,39 +132,48 @@
         </div>
       </section>
 
-      <!--GALLERY-->
-      <!-- <section class="gallery section">
+      <!--About-->
+      <section class="about section">
         <div class="container">
           <h2 class="section-header">Czym się zajmujemy</h2>
-          <ul class="gallery__list list">
-            <li class="gallery-card">
-              <img
-                class="gallery-card__photo"
-                src="./images/portfolio-1.jpg"
-                alt="portfolio-1"
-              />
-              <p class="gallery-card__description">aplikacje komputerowe</p>
+          <ul class="about__list list">
+            <li class="about-card">
+              <img class="about-card__photo"
+                  alt="aplikacje komputerowe"
+                  src="./images/about/about-1-desktop.jpg"
+                  srcset="
+                  ./images/about/about-1-desktop.jpg 1x,
+                  ./images/about/about-1-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+              <p class="about-card__description">aplikacje komputerowe</p>
             </li>
-            <li class="gallery-card">
-              <img
-                class="gallery-card__photo"
-                src="./images/portfolio-2.jpg"
-                alt="portfolio-2"
-              />
-              <p class="gallery-card__description">apikacje mobilne</p>
+            <li class="about-card">
+              <img class="about-card__photo"
+                  alt="aplikacje mobilne"
+                  src="./images/about/about-2-desktop.jpg"
+                  srcset="
+                  ./images/about/about-2-desktop.jpg 1x,
+                  ./images/about/about-2-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"                  
+                />
+              <p class="about-card__description">apikacje mobilne</p>
             </li>
-            <li class="gallery-card">
-              <img
-                class="gallery-card__photo"
-                src="./images/portfolio-3.jpg"
-                alt="portfolio-3"
-              />
-              <p class="gallery-card__description">rozwiązania graficzne</p>
+            <li class="about-card">
+              <img class="about-card__photo"
+                  alt="rozwiązania graficzne"
+                  src="./images/about/about-3-desktop.jpg"
+                  srcset="
+                  ./images/about/about-3-desktop.jpg 1x,
+                  ./images/about/about-3-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"                
+                />
+              <p class="about-card__description">rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
-      </section> -->
-      <!--END GALLERY-->
+      </section>
+     <!--END ABOUT-->
 
       <!--TEAM-->
       <section class="team section">
@@ -168,13 +181,18 @@
           <h2 class="section-header">Nasz zespół</h2>
           <ul class="team__list list">
             <li class="team-card">
-              <img
-                class="team-card__foto"
-                src="./images/zespol-1.jpg"
-                alt="zespol-1"
-                width="270"
-                height="260"
-              />
+              <picture">
+                <img class="team-card__foto" src="./images/team/team-2-tablet.jpg" alt="team-1">
+                <source srcset="./images/team/team-1-desktop.jpg" media="(min-width: 1200px)">    
+                <source srcset="./images/team/team-1-tablet.jpg" media="(min-width: 768px)">                    
+                <!-- <source media="(min-width: 1200px)"
+                        srcset="./images/team/team-1-desktop.jpg 1x,
+                                ./images/team/team-1-desktop@2x.jpg 2x">    
+                <source media="(min-width: 768px)"
+                        srcset="./images/team/team-1-tablet.jpg 1x,
+                                ./images/team/team-1-tablet@2x.jpg 2x">                     -->
+
+              </picture>
               <div class="team-card__wrapper">
                 <h3 class="team-card__name">John Doe</h3>
                 <p class="team-card__job-title">Product Designer</p>
@@ -211,13 +229,18 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                class="team-card__foto"
-                src="./images/zespol-2.jpg"
-                alt="zespol-2"
-                width="270"
-                height="260"
-              />
+              <img class="team-card__foto"
+                  alt="team-2"
+                  src="./images/team/team-2-desktop.jpg"
+                  srcset="
+                  ./images/team/team-1-desktop.jpg 1x,
+                  ./images/team/team-1-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"    
+                  srcset="
+                  ./images/team/team-3-desktop.jpg 1x,
+                  ./images/team/team-3-desktop@2x.jpg 2x"
+                  media="(min-width: 768px)"             
+                />
               <div class="team-card__wrapper">
                 <h3 class="team-card__name">John Doe</h3>
                 <p class="team-card__job-title">Frontend Developer</p>
@@ -254,12 +277,13 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                class="team-card__foto"
-                src="./images/zespol-3.jpg"
-                alt="zespol-3"
-                width="270"
-                height="260"
+              <img class="team-card__foto"
+                alt="team-3"
+                src="./images/team/team-3-desktop.jpg"
+                srcset="
+                  ./images/team/team-3-desktop.jpg 1x,
+                  ./images/team/team-3-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"                
               />
               <div class="team-card__wrapper">
                 <h3 class="team-card__name">John Doe</h3>
@@ -297,13 +321,14 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                class="team-card__foto"
-                src="./images/zespol-4.jpg"
-                alt="zespol-4"
-                width="270"
-                height="260"
-              />
+              <img class="team-card__foto"
+                  alt="team-4"
+                  src="./images/team/team-4-desktop.jpg"
+                  srcset="
+                  ./images/team/team-4-desktop.jpg 1x,
+                  ./images/team/team-4-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"                
+                /> 
               <div class="team-card__wrapper">
                 <h3 class="team-card__name">John Doe</h3>
                 <p class="team-card__job-title">UI Designer</p>
@@ -341,8 +366,8 @@
             </li>
           </ul>
         </div>
-      </section> 
-      <!--END TEAM
+      </section>
+      <!--END TEAM-->
 
       <!--CLIENTS-->
       <section class="clients section">
@@ -393,13 +418,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer__left-side">
-          <a class="navigation__logo link" href="index.html"
+          <a class="navigation-footer__logo link" href="index.html"
             >Web<span class="navigation__logo--light">Studio</span></a>
           <ul class="navigation-footer list">
             <li class="navigation-footer__address">
@@ -477,64 +502,64 @@
       </div>
     </footer>
 
-    <!-- <div class="modal_menu">
-      <div class="modal__close-btn-svg" data-modal-close>
-        <svg class="svg-icon" width="18" height="18">
+
+  <!--menu w oknie modalnym-->
+  <div class="backdrop is-hidden" data-modal-menu>
+    <div class="modal-menu">
+      <div class="modal-menu__close-btn-svg" data-modal-menu-close>
+        <svg class="svg-icon" width="40" height="40">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </div>
-    </div> -->
-
-
-
-
-    <!--menu w oknie modalnym-->
-    <div class="backdrop is-hidden" data-modal-menu>
-      <div class="modal-menu">
-        <div class="modal-menu__close-btn-svg" data-modal-menu-close>
-          <svg class="svg-icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </div>
-        <nav class="modal-menu-navigation">
-          <ul class="modal-menu-navigation__list list">
-            <li class="modal-menu-navigation__item">
-              <a class="modal-menu-navigation__link modal-menu_index link" href="./index.html"
-                >Agencja</a
-              >
-            </li>
-            <li class="modal-menu-navigation__item">
-              <a class="modal-menu-navigation__link modal-menu-index link" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="modal-menu-navigation__item">
-              <a class="modal-menu-navigation__link link" href="./index.html">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-        
-        <div class="modal-menu-header__contact">
-        <a class="modal-menu-header__tel link" href="tel:+48111111111">+48 111 111 111</a>
-        <a class="modal-menu-header__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </div>
-
-        <ul class="modal-menu-social-list__list list">
-            <li class="modal-menu-social-list__item">
-              <a class="modal-menu-social-list__link link" href="#">Instagram</a>
-            </li>
-            <li class="modal-menu-social-list__item">
-              <a class="modal-menu-social-list__link link" href="#">Twitter</a>
-            </li>
-            <li class="modal-menu-social-list__item">
-              <a class="modal-menu-social-list__link link" href="#">Facebook</a>
-            </li>
-            <li class="modal-menu-social-list__item">
-              <a class="modal-menu-social-list__link link" href="#">LinkedIn</a>
-            </li>
-          </ul>
+      <nav class="modal-menu-navigation">
+        <ul class="modal-menu-navigation__list list">
+          <li class="modal-menu-navigation__item">
+            <a class="modal-menu-navigation__link modal-menu__index link" href="./index.html"
+              >Agencja</a
+            >
+          </li>
+          <li class="modal-menu-navigation__item">
+            <a class="modal-menu-navigation__link link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="modal-menu-navigation__item">
+            <a class="modal-menu-navigation__link link" href="./index.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="modal-menu-header__contact">
+      <a class="modal-menu-header__tel link" href="tel:+48111111111">+48 111 111 111</a>
+      <a class="modal-menu-header__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
       </div>
+
+      <ul class="modal-menu-social-list__list list">
+          <li class="modal-menu-social-list__item">
+            <a class="modal-menu-social-list__link link" href="#">Instagram</a>
+          </li>
+          <li class="modal-menu-social-list__item">
+            <a class="modal-menu-social-list__link link" href="#">Twitter</a>
+          </li>
+          <li class="modal-menu-social-list__item">
+            <a class="modal-menu-social-list__link link" href="#">Facebook</a>
+          </li>
+          <li class="modal-menu-social-list__item">
+            <a class="modal-menu-social-list__link link" href="#">LinkedIn</a>
+          </li>
+        </ul>
     </div>
+  </div>
+
+
+
+
+    <!--przycisk zamknięcia jako button-->
+    <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div> -->
 
     <!--przycisk zamknięcia jako svg-->
     <div class="backdrop is-hidden" data-modal>
@@ -635,6 +660,5 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/modal-menu.js"></script>
-
   </body>
 </html>

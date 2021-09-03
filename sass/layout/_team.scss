@@ -1,42 +1,167 @@
-.team {
-  background-color: #f5f4fa;
- 
-  &__list {
-    display: flex;
-    justify-content: space-between;
+// --------------------------- MOBILE ------------------------------ //
+@media screen and (min-width:480px) and (max-width: 767px){
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f5f4fa;
+  
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;      
+    }
+  }
+
+  .team-card {
+    // max-width: 300px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
+
+    &__foto {
+      width: 450px;
+      height: 460px;
+    }
+
+    &__wrapper {
+      background-color: #ffffff;
+    }
+
+    &__name {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.187;
+      letter-spacing: 0.03em;
+      padding-top: 30px;
+      text-align: center;
+      color: #212121;
+    }
+
+    &__job-title {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.187;
+      letter-spacing: 0.03em;
+      margin-top: 10px;
+      margin-bottom: 16px;
+      text-align: center;
+      color: #757575;
+    }
   }
 }
 
-.team-card {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  &:not(:last-child) {
-    margin-right: 30px;
+
+
+// --------------------------- TABLET ------------------------------ //
+ @media screen and (min-width:768px) and (max-width: 1999px){
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f5f4fa;
+  
+    &__list {
+      display: flex;
+      // flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 30px;      
+      // justify-content: space-around;
+    }
   }
 
-  &__wrapper {
-    background-color: #ffffff;
+  .team-card {
+    // max-width: 300px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
+
+    &__foto {
+      width: 354px;
+      height: 374px;
+    }
+
+    &__wrapper {
+      background-color: #ffffff;
+    }
+
+    &__name {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.187;
+      letter-spacing: 0.03em;
+      padding-top: 30px;
+      text-align: center;
+      color: #212121;
+    }
+
+    &__job-title {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.187;
+      letter-spacing: 0.03em;
+      margin-top: 10px;
+      margin-bottom: 16px;
+      text-align: center;
+      color: #757575;
+    }
+  }
+}
+
+
+
+// --------------------------- DESKTOP ------------------------------ //
+
+@media screen and (min-width: 1200px){
+  .team {
+    background-color: #f5f4fa;
+  
+    &__list {
+      display: flex;
+      // justify-content: space-around;
+      column-gap: 30px;
+    }
   }
 
-  &__name {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.171;
-    letter-spacing: 0.03em;
-    padding-top: 30px;
-    text-align: center;
-    color: #212121;
-  }
+  .team-card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
 
-  &__job-title {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.171;
-    letter-spacing: 0.03em;
-    margin-top: 10px;
-    margin-bottom: 16px;
-    text-align: center;
-    color: #757575;
+    &__foto {
+      width: 270px;
+      height: 260px;
+    }
+
+    &__wrapper {
+      background-color: #ffffff;
+    }
+
+    &__name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.171;
+      letter-spacing: 0.03em;
+      padding-top: 30px;
+      text-align: center;
+      color: #212121;
+    }
+
+    &__job-title {
+      font-size: 16px;
+      line-height: 1.171;
+      letter-spacing: 0.03em;
+      margin-top: 10px;
+      margin-bottom: 16px;
+      text-align: center;
+      color: #757575;
+    }
   }
 }

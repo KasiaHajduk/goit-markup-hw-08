@@ -1,10 +1,40 @@
-.section-header {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-  color: #212121;
-  text-align: center;
-  margin-bottom: 50px;
-  
+// --------------------------- MOBILE ------------------------------ //
+@media screen and (min-width:480px) and (max-width: 767px){
+  .section-header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}  
+
+// --------------------------- TABLET ------------------------------ //
+@media screen and (min-width:768px) and (max-width: 1999px){
+  .section-header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+
+// --------------------------- DESKTOP ------------------------------ //
+
+@media screen and (min-width: 1200px){
+  .section-header {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
