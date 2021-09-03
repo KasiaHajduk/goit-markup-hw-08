@@ -1,25 +1,19 @@
 // --------------------------- MOBILE ------------------------------ //
 @media screen and (min-width:480px) and (max-width: 767px){
     .footer {
-      margin: 0 auto;
-      // display: block;
       background-color: #2f303a;
       padding: 60px 0;
      
       &__left-side {
-        // display: block;
         text-align: center;
         margin: 0 auto;
         margin-bottom: 60px;
       }
       
       &__center-side {
-        width: 206px;
-        margin-right: 120px;
         padding: 0 137px;
         margin-bottom: 60px;
         text-align: center;
-        align-items: center;
       }
   
       &__title {
@@ -61,7 +55,6 @@
       }
   
       &__stationary {
-        min-width: 253px;
         font-style: normal;
         font-size: 14px;
         line-height: 1.714;
@@ -94,7 +87,7 @@
       align-items: center;
       
       &__input {
-        min-width: 420px;
+        min-width: 434px;
         padding-top: 15px;
         padding-bottom: 15px;
         padding-left: 16px;
@@ -113,7 +106,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 200px;
         margin-top: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -143,25 +135,28 @@
  @media screen and (min-width:768px) and (max-width: 1999px){
 
   .footer {
+    & .container{
+      min-width: 738px;
+      display: flex;
+      padding: 0 15px;
+    }
+
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
     min-height: 463px;
     background-color: #2f303a;
     padding: 60px 0;
     position: relative;
    
     &__left-side {
+      margin: 0 auto;
       text-align: center;
       margin-left: 76px;
       margin-right: 144px;
-      max-width: 253px;
     }
     
     &__center-side {
-      width: 206px;
-      // height: 80px;
-      // display: block;
+      margin-top: 5px;
     }
 
     &__title {
@@ -179,6 +174,7 @@
       position: absolute;
       top: 247px;
       left: 166px;
+      text-align: center;
       width: 450px;
       display: flex;
       flex-direction: column;
@@ -192,6 +188,7 @@
      line-height: 1.166;
      letter-spacing: 0.03em;
      color: #2196f3;
+     text-align: center;
      margin-bottom: 20px;
    }
 
@@ -205,7 +202,6 @@
     }
 
     &__stationary {
-      min-width: 253px;
       font-style: normal;
       font-size: 14px;
       line-height: 1.714;
@@ -257,7 +253,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-width: 200px;
       margin-top: 20px;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -292,11 +287,10 @@
   .footer {
     & .container{
       display: flex;
+      padding: 0 15px;
     }
 
-    margin: 0 auto;
-    display: flex;
-    max-height: 140px;
+    // display: flex;
     background-color: #2f303a;
     padding: 60px 0;
 
@@ -304,12 +298,9 @@
       margin-left: 0;
       margin-right: 70px;
       text-align: left;
-      // max-height: 81px;
     }
 
     &__center-side {
-      width: 206px;
-      height: 80px;
       display: flex;
     }
 
@@ -325,12 +316,11 @@
     }
 
     &__right-side {
+      min-width: 570px;
       position: relative;
       top: 0px;
       left: 0px;
-      width: 570px;
-      margin-left: 78px;
-      // max-height: 86px;
+      margin-left: 70px;
     }
   }
 
@@ -355,7 +345,7 @@
     }
 
     &__stationary {
-      min-width: 246px;
+      //min-width: 246px;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
@@ -389,7 +379,7 @@
 
     
     &__input {
-      width: 330px;
+      min-width: 335px;
       padding-top: 15px;
       padding-bottom: 15px;
       padding-left: 16px;
@@ -406,6 +396,7 @@
 
     &__btn {
       display: flex;
+      margin-top: 0;
       justify-content: center;
       align-items: center;
       padding-top: 10px;
