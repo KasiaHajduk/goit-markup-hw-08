@@ -53,7 +53,7 @@ p {
 }
 
 .about {
-  background-color: var(--central-color);
+  background-color: aqua;
 }
 
 .about__title {
