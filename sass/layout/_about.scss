@@ -50,16 +50,17 @@
     padding-right: 30px;
 }
 
-.about__btn {
+.about-btn {
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.285;
     display: flex;
     align-items: center;
-    padding-left: 37px;
-    padding-right: 56px;
-    min-height: 44px;
+    padding-left: 42px;
+    padding-right: 29px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: var(--secondary-color);
     background-color: var(--white-color);
     border: 1px solid var(--white-color);
@@ -68,3 +69,10 @@
     margin-top: 17px;
     margin-left: 30px;
 }
+
+.about-btn__icon {
+    width: 10px;
+    height: 10px;
+    margin-left: 19px;
+    margin-top: 2px;
+  }
