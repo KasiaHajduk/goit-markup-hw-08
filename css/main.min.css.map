@@ -7,8 +7,8 @@
         "../sass/base/_common.scss",
         "../sass/base/_container.scss",
         "../sass/base/_section.scss",
-        "../sass/components/_about.scss",
-        "../sass/components/_advantages.scss"
+        "../sass/layout/_about.scss",
+        "../sass/layout/_advantages.scss"
     ],
     "names": [],
     "file": "main.min.css"
