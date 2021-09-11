@@ -1,6 +1,6 @@
 :root {
-  --main-font: 'DM Sans', sans-serif;
-  --secondary-font: 'Titan One', sans-serif;
+  --main-font: "DM Sans", sans-serif;
+  --secondary-font: "Titan One", sans-serif;
   --main-color: #000000;
   --secondary-color: #d41443;
   --first-background-color: #ffb8ca;
@@ -44,17 +44,69 @@ p {
   padding: 0 20px;
   margin: 0 auto;
 }
+.container-about {
+  background-color: var(--central-color);
+  padding-top: 125px;
+}
+.container-advantages {
+  background-color: var(--central-color);
+  padding: 39px 20px 145px 20px;
+}
+.container-customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+.container-contacts {
+  background-color: #FFF5F6;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 86px;
+}
+.container-footer {
+  background-color: #FFF5F6;
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .container-about {
+    padding: 130px 36px 66px 39px;
+  }
+  .container-advantages {
+    padding: 0px 76px 140px 36px;
+  }
+}
 .section {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   padding: 121px 0px 98px 0px;
 }
-
-.about {
-  background-color: var(--central-color);
-  padding-top: 125px;
+.section-about {
+  padding: 0;
+}
+.section-advantages {
+  padding: 0;
+}
+.section-customer {
+  padding: 80px 0px 86px 0px;
+}
+.section-footer {
+  padding: 113px 0px 25px 0px;
+}
+.section-products {
+  padding: 121px 0px 98px 0px;
 }
 
 .about__title {
@@ -62,14 +114,12 @@ p {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.166;
-  padding-left: 41px;
-  padding-right: 41px;
+  letter-spacing: 0.04em;
   color: #ffa5ba;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 15px;
 }
-
 .about__subtitle {
   font-family: var(--secondary-font);
   font-size: 34px;
@@ -81,7 +131,6 @@ p {
   text-align: center;
   margin-bottom: 26px;
 }
-
 .about__description {
   font-family: var(--main-font);
   font-weight: 500;
@@ -92,7 +141,6 @@ p {
   margin-top: 46px;
   margin-bottom: 27px;
 }
-
 .about__comment {
   font-family: var(--main-font);
   font-weight: 500;
@@ -102,7 +150,6 @@ p {
   padding-left: 30px;
   padding-right: 30px;
 }
-
 .about-btn {
   font-family: var(--main-font);
   font-weight: 700;
@@ -122,7 +169,6 @@ p {
   margin-top: 17px;
   margin-left: 30px;
 }
-
 .about-btn__icon {
   width: 10px;
   height: 10px;
@@ -130,16 +176,43 @@ p {
   margin-top: 2px;
 }
 
-.advantages {
-  padding-top: 39px;
-  padding-bottom: 60px;
-  background-color: var(--central-color);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about__title {
+    font-size: 26px;
+    font-weight: 1.153;
+    margin-bottom: 16px;
+  }
+  .about__subtitle {
+    font-size: 48px;
+    line-height: 1.145;
+    margin-bottom: 50px;
+  }
+  .about__article {
+    display: flex;
+  }
+  .about__left-side {
+    padding-right: 17px;
+  }
+  .about__description {
+    font-size: 14px;
+    line-height: 1.785;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 23px;
+  }
+  .about__comment {
+    font-size: 14px;
+    line-height: 1.76;
+    padding: 0;
+  }
+  .about-btn {
+    margin-top: 62px;
+    margin-left: 0;
+  }
 }
-
-.advantages__img {
+.grid__img {
   height: 50px;
 }
-
 .grid__number {
   font-family: var(--secondary-font);
   font-size: 36px;
@@ -150,7 +223,6 @@ p {
   margin-top: 16px;
   min-height: 56px;
 }
-
 .grid__description {
   font-family: var(--main-font);
   font-weight: 700;
@@ -159,4 +231,21 @@ p {
   max-width: 230px;
   margin-bottom: 38px;
 }
-/*# sourceMappingURL=main.css.map */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .grid {
+    display: flex;
+    gap: 60px;
+  }
+  .grid__number {
+    font-size: 48px;
+    line-height: 1.145;
+    margin-top: 36px;
+    margin-bottom: 13px;
+  }
+  .grid__description {
+    font-size: 14px;
+    line-height: 1.714;
+    margin-bottom: 0px;
+  }
+}/*# sourceMappingURL=main.css.map */

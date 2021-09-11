@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>projekt_razem</title>
+    <title>testowy moj</title>
   </head>
 
   <body>
@@ -38,85 +38,97 @@
       <include src="./partials/advantages.html"></include> -->
 
 <!-- ------  ABOUT  ------>
-<section class="about container">
-    <h3 class="about__title">tradition and love</h3>
-    <h4 class="about__subtitle">how it's <br /> made </h4>
-    <picture>
-        <source
-            srcset="./images/about/about-img.webp 1x, ./images/about/about-img@2x.webp 2x"
-            media="(min-width: 320px)" type=images/webp/>
-        <source
-            srcset="./images/about/about-img.png 1x, ./images/about/about-img@2x.png 2x"
-            media="(min-width: 320px)"/>
-        <img class="about__img"
-            src="./images/about/about-img.png" 
-            alt="krowa z dzbankiem mleka" >
-    </picture>
-    <p class="about__description">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla. </p>
-    <p class="about__comment">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, <br/>tincidunt.
-        <br/> <br/> Aliquam erat volutpat. Aenean accumsan.</p>
-
-    <button class="about-btn" type="button"> 
-        <span> Read more </span>
-        <svg class="about-btn__icon">
-            <use href="/images/about/icons.svg#icon-arrow-left"></use>
-        </svg>
-    </button>
-
+<section class="section section-about">
+    <div class="container container-about">
+        <h3 class="about__title">tradition and love</h3>
+        <h4 class="about__subtitle">how it's made </h4>
+        <article class="about__article">
+            <div class="about__left-side">
+                <picture>
+                    <source
+                        srcset="./images/about/about-tablet-img.webp 1x, ./images/about/about-tablet-img@2x.webp 2x"
+                        media="(min-width: 768px)" type=images/webp/>
+                    <source
+                        srcset="./images/about/about-tablet-img.png 1x, ./images/about/about-tablet-img@2x.png 2x"
+                        media="(min-width: 768px)"/>                    
+                    <source
+                        srcset="./images/about/about-img.webp 1x, ./images/about/about-img@2x.webp 2x"
+                        media="(min-width: 320px)" type=images/webp/>
+                    <source
+                        srcset="./images/about/about-img.png 1x, ./images/about/about-img@2x.png 2x"
+                        media="(min-width: 320px)"/>
+                    <img class="about__img"
+                        src="./images/about/about-img.png" 
+                        alt="krowa z dzbankiem mleka" >
+                </picture>
+            </div>
+            <div class="about__right-side">
+                <p class="about__description">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla. </p>
+                <p class="about__comment">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci&nbsp;in imperdiet placerat. Vestibulum euismod nisl&nbsp;suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p class="about__comment"><br/>Aliquam erat volutpat. Aenean accumsan.</p>
+            
+                <button class="about-btn" type="button"> 
+                    <span> Read more </span>
+                    <svg class="about-btn__icon">
+                        <use href="/images/about/icons.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>        
+            </div>
+        </article>
+    </div>
 </section>
 
 <!-- ------  ADVANTAGES  ------>
-<section class="advantages container">
-  
-  
-  <h3 hidden class="advantages__title">Advantages</h3>
-  <ul class="grid list">
-      <li class="grid__card"> 
-          <picture>
-              <source
-                  srcset="./images/advantages/advantages-icon-1.webp 1x, ./images/advantages/advantages-icon-1@2x.webp 2x"
-                  media="(min-width: 320px)" type=images/webp/>
-              <source
-                  srcset="./images/advantages/advantages-icon-1.png 1x, ./images/advantages/advantages-icon-1@2x.png 2x"
-                  media="(min-width: 320px)"/>
-              <img class="advantages__img"
-                  src="./images/advantages/advantages-icon-1.png" 
-                  alt="mleko">
-          </picture>
-          <h4 class="grid__number">721</h4>
-          <p class="grid__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-      </li>
-      <li class="grid__card"> 
-          <picture>
-              <source
-                  srcset="./images/advantages/advantages-icon-2.webp 1x, ./images/advantages/advantages-icon-2@2x.webp 2x"
-                  media="(min-width: 320px)" type=images/webp/>
-              <source
-                  srcset="./images/advantages/advantages-icon-2.png 1x, ./images/advantages/advantages-icon-2@2x.png 2x"
-                  media="(min-width: 320px)"/>
-              <img class="grid__img"
-                  src="./images/advantages/advantages-icon-2.png" 
-                  alt="jablka">
-          </picture>
-          <h4 class="grid__number">16kg</h4>
-          <p class="grid__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-      </li>            
-      <li class="grid__card"> 
-          <picture>
-              <source
-                  srcset="./images/advantages/advantages-icon-3.webp 1x, ./images/advantages/advantages-icon-3@2x.webp 2x"
-                  media="(min-width: 320px)" type=images/webp/>
-              <source
-                  srcset="./images/advantages/advantages-icon-3.png 1x, ./images/advantages/advantages-icon-3@2x.png 2x"
-                  media="(min-width: 320px)"/>
-              <img class="grid__img"
-                  src="./images/advantages/advantages-icon-3.png" 
-                  alt="serce">
-          </picture>
-          <h4 class="grid__number">84</h4>
-          <p class="grid__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-      </li>            
-  </ul>
+<section class="section section-advantages">
+    <div class="container container-advantages">
+        <h3 hidden class="advantages__title">Advantages</h3>
+        <ul class="grid list">
+            <li class="grid__card"> 
+                <picture>
+                    <source
+                        srcset="./images/advantages/advantages-icon-1.webp 1x, ./images/advantages/advantages-icon-1@2x.webp 2x"
+                        type=images/webp/>
+                    <source
+                        srcset="./images/advantages/advantages-icon-1.png 1x, ./images/advantages/advantages-icon-1@2x.png 2x"             />
+                    <img class="grid__img"
+                        src="./images/advantages/advantages-icon-1.png" 
+                        alt="mleko">
+                </picture>
+                <h4 class="grid__number">721</h4>
+                <p class="grid__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class="grid__card"> 
+                <picture>
+                    <source
+                        srcset="./images/advantages/advantages-icon-2.webp 1x, ./images/advantages/advantages-icon-2@2x.webp 2x"
+                        media="(min-width: 320px)" type=images/webp/>
+                    <source
+                        srcset="./images/advantages/advantages-icon-2.png 1x, ./images/advantages/advantages-icon-2@2x.png 2x"
+                        media="(min-width: 320px)"/>
+                    <img class="grid__img"
+                        src="./images/advantages/advantages-icon-2.png" 
+                        alt="jablka">
+                </picture>
+                <h4 class="grid__number">16kg</h4>
+                <p class="grid__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>            
+            <li class="grid__card"> 
+                <picture>
+                    <source
+                        srcset="./images/advantages/advantages-icon-3.webp 1x, ./images/advantages/advantages-icon-3@2x.webp 2x"
+                        media="(min-width: 320px)" type=images/webp/>
+                    <source
+                        srcset="./images/advantages/advantages-icon-3.png 1x, ./images/advantages/advantages-icon-3@2x.png 2x"
+                        media="(min-width: 320px)"/>
+                    <img class="grid__img"
+                        src="./images/advantages/advantages-icon-3.png" 
+                        alt="serce">
+                </picture>
+                <h4 class="grid__number">84</h4>
+                <p class="grid__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>            
+        </ul>
+    </div>
 </section> 
 
     
